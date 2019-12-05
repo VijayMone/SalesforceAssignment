@@ -1,16 +1,6 @@
-<!--  ----------------------------------------------------------------------  -->
-<!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
-<!--  If necessary, please modify the charset parameter to specify the        -->
-<!--  character set of your HTML page.                                        -->
-<!--  ----------------------------------------------------------------------  -->
-
-<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
-
-<!--  ----------------------------------------------------------------------  -->
-<!--  NOTE: Please add the following <FORM> element to your page.             -->
-<!--  ----------------------------------------------------------------------  -->
-
-<form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST" class= "">
 
 <input type=hidden name="orgid" value="00D2w000000GHmx">
 <input type=hidden name="retURL" value="http://www.google.com">
@@ -23,16 +13,38 @@
 <!--  value="vijay_mone@persistent.com">                                      -->
 <!--  ----------------------------------------------------------------------  -->
 
-<label for="name">Contact Name</label><input  id="name" maxlength="80" name="name" size="20" type="text" /><br>
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand" href="#">
+    <img src="/logo.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
+    Telecom Company Portal
+  </a>
+</nav>
+<div class="card" style = "height:600px;width:500px;">
+  <div class="card-header">
+<div class = "form-group">
+<label for="name">Contact Name</label><input  id="name" maxlength="80" name="name" size="20" type="text" class="form-control"/><br>
+</div>
 
-<label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
+<div class="form-group">
+ <label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" required="true" class="form-control"/><br>
+ <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+</div>
 
-<label for="phone">Phone</label><input  id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
+<div class="form-group">
+<label for="phone">Phone</label><input  id="phone" maxlength="40" name="phone" size="20" type="text" required="true" class="form-control"/><br>
+</div>
 
-<label for="subject">Subject</label><input  id="subject" maxlength="80" name="subject" size="20" type="text" /><br>
+<div class="form-group">
+<label for="subject">Subject</label><input  id="subject" maxlength="80" name="subject" size="20" type="text"  class="form-control"/><br>
+</div>
 
-<label for="description">Description</label><textarea name="description"></textarea><br>
-
-<input type="submit" name="submit">
+<div class="form-group">
+<label for="description">Description</label><textarea name="description" class="form-control"></textarea><br>
+</div>
+<div class="form-group">
+<input type="submit" name="submit" class = "btn btn-primary"/>
+</div>
 
 </form>
+</div>
+</div>
